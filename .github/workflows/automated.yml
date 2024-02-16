@@ -9,14 +9,10 @@ on:
     - cron: "11 5 * * *"
 
 inputs:
-  
-  description: 'Person to greet'
-  # Default value if no value is explicitly provided
-  default: 'World'
-  # Input has to be provided for the workflow to run
-  required: true
-  # The data type of the input
-  type: string
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
 
 outputs:
   time: # id of output
